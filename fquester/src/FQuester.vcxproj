@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{B956C7F7-7A02-4C24-A426-737AF75F0A45}</ProjectGuid>
+    <RootNamespace>FQuester</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>sfml\include;opencv\include;sdl2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>sfml\lib;sdl2\lib\x86;opencv\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>sfml\include;opencv\include;sdl2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>sfml\lib;sdl2\lib\x86;opencv\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-audio-d.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_net.lib;SDL2_ttf.lib;SDL2main.lib;SDL2test.lib;"opengl32.lib";"glu32.lib";opencv_video220d.lib;opencv_objdetect220d.lib;opencv_ts220.lib;opencv_video220.lib;opencv_objdetect220.lib;opencv_ml220d.lib;opencv_ml220.lib;opencv_legacy220d.lib;opencv_legacy220.lib;opencv_imgproc220d.lib;opencv_imgproc220.lib;opencv_highgui220d.lib;opencv_highgui220.lib;opencv_gpu220d.lib;opencv_gpu220.lib;opencv_flann220d.lib;opencv_flann220.lib;opencv_ffmpeg220d.lib;opencv_ffmpeg220.lib;opencv_features2d220d.lib;opencv_features2d220.lib;opencv_core220d.lib;opencv_core220.lib;opencv_contrib220d.lib;opencv_contrib220.lib;opencv_calib3d220d.lib;opencv_calib3d220.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-system-d.lib;sfml-audio-d.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_net.lib;SDL2_ttf.lib;SDL2main.lib;SDL2test.lib;opencv_video220d.lib;opencv_objdetect220d.lib;opencv_ts220.lib;opencv_video220.lib;opencv_objdetect220.lib;opencv_ml220d.lib;opencv_ml220.lib;opencv_legacy220d.lib;opencv_legacy220.lib;opencv_imgproc220d.lib;opencv_imgproc220.lib;opencv_highgui220d.lib;opencv_highgui220.lib;opencv_gpu220d.lib;opencv_gpu220.lib;opencv_flann220d.lib;opencv_flann220.lib;opencv_ffmpeg220d.lib;opencv_ffmpeg220.lib;opencv_features2d220d.lib;opencv_features2d220.lib;opencv_core220d.lib;opencv_core220.lib;opencv_contrib220d.lib;opencv_contrib220.lib;opencv_calib3d220d.lib;opencv_calib3d220.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3D.h" />
+    <ClInclude Include="audioUnit.h" />
+    <ClInclude Include="crash.h" />
+    <ClInclude Include="cursor.h" />
+    <ClInclude Include="fdpReader.h" />
+    <ClInclude Include="fgui.h" />
+    <ClInclude Include="fguiRW_askReset.h" />
+    <ClInclude Include="fguiRW_cpuTest.h" />
+    <ClInclude Include="fguiRW_auction.h" />
+    <ClInclude Include="fguiRW_console.h" />
+    <ClInclude Include="fguiRW_exitAsk.h" />
+    <ClInclude Include="fguiRW_mediaGuide.h" />
+    <ClInclude Include="fguiRW_namesList.h" />
+    <ClInclude Include="fguiRW_questerRedactor.h" />
+    <ClInclude Include="fguiRW_reallyDelete.h" />
+    <ClInclude Include="fguiRW_menu.h" />
+    <ClInclude Include="fguiRW_settings.h" />
+    <ClInclude Include="fguiRW_start.h" />
+    <ClInclude Include="fgui_clsTxt.h" />
+    <ClInclude Include="fgui_cursor.h" />
+    <ClInclude Include="fgui_cursorTextBox.h" />
+    <ClInclude Include="fgui_c_clear.h" />
+    <ClInclude Include="fgui_element.h" />
+    <ClInclude Include="fgui_e_button.h" />
+    <ClInclude Include="fgui_e_checkBox.h" />
+    <ClInclude Include="fgui_e_consoleList.h" />
+    <ClInclude Include="fgui_e_list.h" />
+    <ClInclude Include="fgui_e_panel.h" />
+    <ClInclude Include="fgui_e_serf.h" />
+    <ClInclude Include="fgui_e_settingsList.h" />
+    <ClInclude Include="fgui_e_text.h" />
+    <ClInclude Include="fgui_e_textBox.h" />
+    <ClInclude Include="fgui_ftexture.h" />
+    <ClInclude Include="fgui_ftexture_SDL.h" />
+    <ClInclude Include="fgui_info.h" />
+    <ClInclude Include="fgui_main.h" />
+    <ClInclude Include="fgui_objects.h" />
+    <ClInclude Include="fgui_render.h" />
+    <ClInclude Include="fgui_render_SDL.h" />
+    <ClInclude Include="fgui_resources.h" />
+    <ClInclude Include="fgui_RWGlobalVars.h" />
+    <ClInclude Include="fgui_stsTxt.h" />
+    <ClInclude Include="fgui_system.h" />
+    <ClInclude Include="fgui_timer.h" />
+    <ClInclude Include="fgui_vars.h" />
+    <ClInclude Include="fgui_window.h" />
+    <ClInclude Include="fgui_window_call.h" />
+    <ClInclude Include="fgui_window_iabwnd.h" />
+    <ClInclude Include="fgui_window_tpdfs.h" />
+    <ClInclude Include="fgui_www.h" />
+    <ClInclude Include="fileDialogs.h" />
+    <ClInclude Include="finParser.h" />
+    <ClInclude Include="fix.h" />
+    <ClInclude Include="fprUnit.h" />
+    <ClInclude Include="frameLimit.h" />
+    <ClInclude Include="fguiRW_badResol.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="game_globalVars.h" />
+    <ClInclude Include="INFO.h" />
+    <ClInclude Include="infoDev.h" />
+    <ClInclude Include="loadBG.h" />
+    <ClInclude Include="names.h" />
+    <ClInclude Include="objects.h" />
+    <ClInclude Include="objPars.h" />
+    <ClInclude Include="qal_unpacking.h" />
+    <ClInclude Include="q_cmdPoints.h" />
+    <ClInclude Include="q_comShow.h" />
+    <ClInclude Include="q_end.h" />
+    <ClInclude Include="q_pointsBar.h" />
+    <ClInclude Include="QAL.h" />
+    <ClInclude Include="QAL_Reader.h" />
+    <ClInclude Include="q_game.h" />
+    <ClInclude Include="q_globalVars.h" />
+    <ClInclude Include="q_load.h" />
+    <ClInclude Include="q_menu.h" />
+    <ClInclude Include="q_menuGui.h" />
+    <ClInclude Include="q_redactor.h" />
+    <ClInclude Include="q_showTopics.h" />
+    <ClInclude Include="q_tableAsk.h" />
+    <ClInclude Include="q_timer.h" />
+    <ClInclude Include="q_topicsBar.h" />
+    <ClInclude Include="readPack.h" />
+    <ClInclude Include="res.h" />
+    <ClInclude Include="com.h" />
+    <ClInclude Include="screenshot.h" />
+    <ClInclude Include="settings.h" />
+    <ClInclude Include="shadow.h" />
+    <ClInclude Include="q_showerAsk.h" />
+    <ClInclude Include="startEngine.h" />
+    <ClInclude Include="startLogo.h" />
+    <ClInclude Include="system.h" />
+    <ClInclude Include="SystemConsole.h" />
+    <ClInclude Include="textOpt.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fgui_res_bar.XPM" />
+    <None Include="fgui_res_checkBox.XPM" />
+    <None Include="fgui_res_click.XPM" />
+    <None Include="fgui_res_icons.XPM" />
+    <None Include="fgui_res_move.xpm" />
+    <None Include="fgui_res_redactor.xpm" />
+    <None Include="fgui_res_simple.xpm" />
+    <None Include="fgui_res_size.xpm" />
+    <None Include="fgui_res_sizeLeft.xpm" />
+    <None Include="fgui_res_sizeTop.xpm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
