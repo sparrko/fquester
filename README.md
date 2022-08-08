@@ -1,5 +1,5 @@
 # fquester
-<b>Everything for building the release version of FQuester 1.1</b>
+<p align="center"><b>Everything for building the release version of FQuester 1.1</b></p>
 <p align="center"><img style="text-align: center" src="https://user-images.githubusercontent.com/55271713/183113819-8eb81f19-1ab6-455d-aadd-e2e3fb5cab3d.png"></p>
 <p align="center"><a href="https://fquester.000webhostapp.com/index.html">Official site!</a></p>
 <p>The game was in active development for about 3 months, after which it was finalized for another 4 months, in 2020.</p>
